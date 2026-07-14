@@ -1,0 +1,88 @@
+/********************* RESET STYLES *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*10 px if 16px is default font-size*/
+}
+
+/********************* CSS VARIABLES *********************/
+/********************* DESIGN SYSTEM *********************/
+:root {
+  /* Color system */
+  --clr-slant-300: hsl(212, 45%, 89%);
+  --clr-slant-500: hsl(216, 15%, 48%);
+  --clr-slant-900: hsl(218, 44%, 22%);
+
+  /* Typescale */
+  --size-body: 1.5rem;
+  --size-h1: 2rem;
+
+  /* Spacing system */
+  /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+  --space-2: 0.2rem;
+  --space-4: 0.4rem;
+  --space-8: 0.8rem;
+  --space-12: 1.2rem;
+  --space-16: 1.6rem;
+  --space-24: 2.4rem;
+  --space-32: 3.2rem;
+  --space-48: 4.8rem;
+  --space-64: 6.4rem;
+  --space-80: 8rem;
+  --space-96: 9.6rem;
+  --space-128: 12.8rem;
+
+  /* border-radius */
+  --border-radius-sm: 0.8rem;
+  --border-radius-md: 1.2rem;
+  --border-radius-lg: 1.6rem;
+}
+
+/********************* BODY STYLES *********************/
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  color: var(--clr-slant-500);
+  background-color: var(--clr-slant-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0rem var(--space-24);
+}
+
+/********************* REUSABLE COMPONENT STYLES *********************/
+.card {
+  background-color: white;
+  max-width: 30rem;
+  padding: var(--space-12) var(--space-12) var(--space-24);
+  border-radius: var(--border-radius-sm);
+}
+
+.card__img {
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--space-24);
+}
+
+.card__text-box {
+  text-align: center;
+  padding: 0 var(--space-8);
+}
+
+.card__title {
+  font-size: var(--size-h1);
+  font-weight: 700;
+  /* letter-spacing: ; */
+  margin-bottom: var(--space-16);
+  color: var(--clr-slant-900);
+}
+
+.card__description {
+  font-size: var(--size-body);
+  color: var(--clr-slant-500);
+}
